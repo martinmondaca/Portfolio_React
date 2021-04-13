@@ -1,6 +1,5 @@
 import React from "react";
 import { Link } from "react-router-dom";
-import Resume from "../Resume/index.js"
 import Pdf from "../../assets/resume2020.pdf"
 // import "./style.css";
 
