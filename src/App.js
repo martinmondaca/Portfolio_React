@@ -5,21 +5,26 @@ import Navbar from "./components/Navbar"
 import Wrapper from "./components/Wrapper"
 import Project from "./components/Project"
 import About from "./pages/About"
+import Resume from "./components/Resume"
+import Footer from "./components/Footer"
 
 function App() {
   return (
-    <>
-      <div>
+
+    <div className="page-container">
+      <div className="content-wrap">
         <Router>
-          <div>
-            <Navbar />
-            <Wrapper>
-              <Route exact path="/about" component={About} />
-              <Route exact path="/portfolio" component={Project} />
-            </Wrapper>
-          </div>
+          <Navbar />
+          {/* <Wrapper> */}
+          <Route exact path="/" component={About} />
+          <Route exact path="/portfolio" component={Project} />
+          <Route exact path="/resume" component={Resume} />
+          {/* </Wrapper> */}
         </Router>
-      </div>    </>
+      </div>
+
+      <Footer />
+    </div>
   );
 }
 
