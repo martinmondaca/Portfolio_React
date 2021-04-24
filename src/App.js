@@ -2,7 +2,6 @@
 import { BrowserRouter as Router, Route } from "react-router-dom";
 import './App.css';
 import Navbar from "./components/Navbar"
-import Wrapper from "./components/Wrapper"
 import Project from "./components/Project"
 import About from "./pages/About"
 import Resume from "./components/Resume"
