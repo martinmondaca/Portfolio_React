@@ -1,5 +1,5 @@
 // import logo from './logo.svg';
-import { BrowserRouter as Router, Route } from "react-router-dom";
+import { HashRouter, Route, Link, Switch } from "react-router-dom";
 import './App.css';
 import Navbar from "./components/Navbar"
 import Project from "./components/Project"
@@ -12,15 +12,16 @@ function App() {
 
     <div className="page-container">
       <div className="content-wrap">
-        <Router>
+        <HashRouter basename={process.env.PUBLIC_URL}>
           <Navbar />
           {/* <Wrapper> */}
-          <Route exact path="/" component={About} />
-          <Route exact path="/portfolio" component={Project} />
-          <Route exact path="/resume" component={Resume} />
+          <Switch>
+            <Route exact path={"/"} component={About} />
+            <Route exact path={"/portfolio"} component={Project} />
+            <Route exact path={"/resume"} component={Resume} />
+          </Switch>
           {/* </Wrapper> */}
-        </Router>
-        <About />
+        </HashRouter>
       </div>
 
       <Footer />
