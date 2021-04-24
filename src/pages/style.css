@@ -1,0 +1,35 @@
+main{
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-size: 20px;
+}
+
+figure{
+    padding: 5px;
+}
+
+.about-me{
+    border-top-style: none;
+    border-right-style: solid;
+    border-bottom-style: none;
+    border-left-style: solid;
+    border-width: 10px;
+    border-radius: 5px;
+    padding: 10px;
+    background-image: url(../assets/images/bluewatercolor.jpg);
+    margin-bottom: 50px;
+}
+
+.profilePic {
+    float: left;
+    border-radius: 10%;
+    margin-right: 20px;
+}
+
+.pageTitle {
+    border-bottom-style: solid;
+}
+
+.skillItem {
+    display: inline-block;
+    margin: 0 10px;
+  }
